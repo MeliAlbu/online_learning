@@ -2,20 +2,18 @@
 import React, { FC } from "react";
 // MUI Components
 import { Button } from "@material-ui/core";
-// Component's Stylesheet
-import "./styles.scss";
-// Logos
-import Lectura from "../../assets/Lectura.svg";
-// Prop Types to Storybook
+// Types
 import { CardProps } from "./types";
 // Icons
+import Lectura from "../../assets/Lectura.svg";
 import DonutLargeRoundedIcon from "@material-ui/icons/DonutLargeRounded";
 import CalendarTodayOutlinedIcon from "@material-ui/icons/CalendarTodayOutlined";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+// Styles
+import "./styles.scss";
 
 /**
  * ### Nombre del componente: `<Card>`
- * Input de tipo selector dropdown; despliega opciones para que el usuario seleccione.
  */
 
 const Card: FC<CardProps> = ({

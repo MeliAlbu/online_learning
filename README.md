@@ -38,7 +38,7 @@ _Proyecto creado a través de Create React App_
 
 - [React](https://create-react-app.dev/) - Libreria para desarrollo
 - [Material-UI](http://material-ui.com/) - Guia de estilos y componentes
-- [TypeScript] - Libreria de Javascript para agregar tipado estático opcional.
+- [Typescript](https://www.typescriptlang.org/) - Libreria para agregar tipado estático opcional.
 - [Styled Components & Sass](https://styled-components.com/) - Estilos
 
 ## Autora ✒️
