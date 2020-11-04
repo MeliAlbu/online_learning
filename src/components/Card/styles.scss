@@ -1,0 +1,263 @@
+@import "../../assets/scss/main.scss";
+
+.card {
+	border: 1px solid #dfdfda;
+	border-radius: 12px;
+	width: 744px;
+	height: 156px;
+	display: flex;
+	&__container--one {
+		padding: 0.5rem 0 0 1rem;
+	}
+	&__container--three {
+		justify-content: center;
+		align-items: flex-end;
+		display: flex;
+		margin-left: 8rem;
+	}
+	&__text {
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 1rem 0 1rem 1rem;
+	}
+	&__title {
+		font-family: "DM Sans", sans-serif;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		color: #1a1a1a;
+		padding-bottom: 0.5rem;
+	}
+	&__subtitle {
+		font-family: DM Sans;
+		font-size: 18px;
+		line-height: 23px;
+		padding-bottom: 0.5rem;
+	}
+	&__new {
+		font-family: DM Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		border-radius: 1px;
+		color: #ffffff;
+		padding: 4px 4px 4px 4px;
+		background: #27a8ff;
+		box-sizing: border-box;
+		border-radius: 16px;
+		margin-bottom: 0.5rem;
+	}
+	&__late {
+		font-family: DM Sans;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		color: #f45c3a;
+		padding-bottom: 0.5rem;
+		padding: 4px 4px 4px 4px;
+		background: gray;
+		box-sizing: border-box;
+		border-radius: 16px;
+	}
+	&__progress {
+		font-family: DM Sans;
+		font-size: 14px;
+		line-height: 18px;
+		display: flex;
+		align-items: center;
+		color: #6d7878;
+		padding-bottom: 0.5rem;
+	}
+	&__tags {
+		display: flex;
+	}
+	&__headers {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		display: flex;
+		justify-content: flex-start;
+	}
+}
+.date {
+	display: flex;
+	flex-direction: row;
+	&__text {
+		font-family: DM Sans;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	&__title,
+	&__content {
+		color: #6d7878;
+	}
+}
+.completed {
+	display: flex;
+	width: 6rem;
+	padding: 0 1rem 1rem 1rem;
+	&__icon {
+		color: #50d174;
+	}
+	&__text {
+		font-family: DM Sans;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		display: flex;
+		align-items: center;
+		color: #1a1a1a;
+		padding-left: 0.5rem;
+	}
+}
+
+.card__container--three .button {
+	background: linear-gradient(0deg, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)),
+		linear-gradient(0deg, #4f36d6, #4f36d6);
+	margin: 0 2rem 2rem 0;
+	&__text {
+		color: #ffffff;
+	}
+}
+
+.tag {
+	background: #ffffff;
+	border: 1px solid #dfdfda;
+	border-radius: 12px;
+	width: 336px;
+	height: 40px;
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		padding: 4px 4px 4px 4px;
+		width: 70px;
+		height: 24px;
+		background: #ffffff;
+		border: 1px solid #dfdfda;
+		box-sizing: border-box;
+		border-radius: 16px;
+		font-family: DM Sans;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		color: #1a1a1a;
+		margin: 0.5rem 0 0 0.5rem;
+	}
+}
+
+@include screen-size("sm") {
+	.card {
+		display: flex;
+		justify-content: flex-start;
+		width: 744px;
+		height: 156px;
+		&__container {
+			&--one {
+				width: 5%;
+				padding: 1rem 0 0 1rem;
+			}
+			&--two {
+				width: 70%;
+			}
+			&--three {
+				width: 25%;
+				justify-content: flex-end;
+				align-items: flex-end;
+				display: flex;
+			}
+		}
+		&__text {
+			padding-left: 2rem;
+		}
+		&__progress {
+			padding-left: 1rem;
+		}
+		&__tags {
+			display: flex;
+		}
+		&__headers {
+			display: flex;
+			flex-direction: column;
+		}
+		&__title {
+			display: flex;
+			justify-content: flex-start;
+		}
+	}
+}
+.date {
+	display: flex;
+	flex-direction: row;
+}
+.tag {
+	width: 744px;
+	height: 40px;
+	margin-bottom: 2rem;
+}
+
+@include screen-size("md") {
+	.card {
+		display: flex;
+		justify-content: flex-start;
+		width: 976px;
+		height: 88px;
+		padding: 1rem 0 1rem 0;
+		&__container--one {
+			display: flex;
+			justify-content: center;
+			align-items: baseline;
+			padding: 0 0 0 1rem;
+		}
+		&__container--two {
+			display: flex;
+			flex-direction: row;
+		}
+		&__container--three {
+			justify-content: center;
+			align-items: center;
+			margin-left: 0.5rem;
+		}
+		&__headers {
+			justify-content: flex-start;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__text {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+	.date {
+		margin: 0.5rem 0 0.5rem 2.5rem;
+		display: flex;
+		&__information {
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+			padding-left: 1rem;
+		}
+		&__title {
+			display: flex;
+		}
+		&__content {
+			display: flex;
+		}
+	}
+	.tag {
+		width: 976px;
+		height: 40px;
+		&__button {
+			margin: 0.5rem 0 0 0.5rem;
+		}
+	}
+
+	.completed {
+		padding: 1rem 1rem 1rem 1rem;
+	}
+}
